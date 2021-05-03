@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  <link rel="stylesheet" href="contactus.css">
+</head>
+<body onload="myFunction()">
+<!-- Start Preloader -->
+    <div id ="loading-area">
+<span class="loader">Loading...</span>
+<span class="load_anim1"></span>
+<span class="load_anim2"></span>
+</div>
+<!-- End Preloader -->
+        <!--  Start Header -->
+    <header>
+        <div class="container">
+            <a><img src="logo.png" class="logo"></a>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="nav">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exploreplan.html">Explore Plans</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <section class="home">
+        <div class="container">
+            <h1>  <span>Contact</span> Us </h1>
+        </div>
+    </section>
+    <!-- End Home -->
+ <!-- Start contact section  -->
+    <section class="contact">
+        <h3 style="color: #17252a; padding-left: 26%; font-size: 40px;">Send Query</h3>
+        <div class="container">
+            <div class="content">
+                <div class="box form">
+                    <form>
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter Email">
+                        <input type="text" placeholder="Enter Mobile">
+                        <textarea placeholder="Enter Message"></textarea>
+                        <button type="submit" id="sendbtn"onclick="SendQuery()">Send</button>
+                    </form>
+                </div>
+                <div class="box text">
+                    <h2>Get Connected with Gym</h2>
+                    <p class="title-p">Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Aperiam corporis rem quisquam fugiat magnam alias a ipsa sed,
+                        nulla nisi tenetur soluta doloribus reiciendis
+                        laborum id! Voluptatibus labore voluptatum rem.</p>
+                    <div class="social">
+                        <a href=""><span class="fa fa-facebook"></span></a>
+                        <a href=""><span class="fa fa-instagram"></span></a>
+                        <a href=""><span class="fa fa-whatsapp"></span></a>
+                        <a href=""><span class="fa fa-mobile"></span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- End contact section  -->
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $(".ham-burger").click(function ()
+            {
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active");
+            })
+        })
+    </script>
+<script>
+let preloader = document.getElementById('loading-area');
+function myFunction(){
+preloader.style.display = 'none';
+}
+</script>
+</body>
+</html>
